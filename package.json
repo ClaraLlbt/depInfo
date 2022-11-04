@@ -1,6 +1,7 @@
 {
   "name": "toulon",
   "version": "0.0.0",
+  "homepage": "https://clarahlt.github.io/Dep-Info/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
