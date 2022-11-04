@@ -6,6 +6,9 @@
     
     <Services />
 
+    <Strengths/>
+    <!-- <ClientsServices/> -->
+
 
 </template>
 
@@ -14,13 +17,15 @@
 import HdrBanner from '../components/HdrBanner.vue';
 import Navbar from '../components/Navbar.vue';
 import Services from '../components/Services.vue';
+import Strengths from '../components/Strengths.vue';
 
 export default {
   name: "HomeViewVue",
   components:{
     Navbar,
     HdrBanner,
-    Services
+    Services,
+    Strengths
   }
 }  
 </script>

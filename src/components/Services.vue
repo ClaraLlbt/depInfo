@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid services-container">
+    <div class="container services-container">
         <h2>Nos prestations</h2>
         <div class="row services">
             <h4>Nous vous proposons une assistance informatique PC/MAC</h4>
@@ -9,7 +9,7 @@
                 <div class="col card-dts icons-location">
                     <div class="col house-icon">
                         <div class="rounded-bckgrd house-i"><i class="bi bi-house-door"></i></div>
-                        <p>A Domicile</p>
+                        <p>Site Client</p>
                     </div>
                     <div class="col shop-icon">
                         <div class="rounded-bckgrd shop-i"><i class="bi bi-shop"></i></div>
@@ -41,18 +41,6 @@
                     
                 </div>
             </div>
-                <!-- <div class="list-services">
-                    <ul>
-                        <li>A domicile</li>
-                        <li>A l'atelier</li>
-                        <li>Dépannage Informatique</li>
-                        <li>Vente de matériel informatique neuf ou reconditionné</li>
-                        <li>Création de réseau internet et Dépannage</li>
-                        <li>Installation d'équipements informatiques</li>
-                        <li>Cours et remise à niveau</li>
-                    </ul>
-                </div> -->
-            
         </div>
     </div>
 </template>
@@ -83,7 +71,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container-fluid{
+.services-container{
     overflow: hidden;
     width: 90%;
     margin: auto;
