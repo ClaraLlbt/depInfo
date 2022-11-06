@@ -5,11 +5,12 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: "/Home",
+      path: "/",
       name: "home",
       component: HomeView,
     }
   ],
+  base: 'https://clarahlt.github.io/depInfo/'
 });
 
 export default router;
