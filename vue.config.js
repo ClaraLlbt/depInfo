@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: "/Dep-Info/",
+    publicPath: "/depInfo/",
   };
   
   

@@ -5,16 +5,18 @@
   color: #485665;
 }
 
-a,
-.green {
+a,.nav-link{
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+  color: #485665;
+  
 }
+.active{
+    color: #3E83FF;
+  }
 
 @media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+  a:hover, .nav-link:hover {
+    color: #3e83ff;
   }
 }
 
