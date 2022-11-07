@@ -12,7 +12,10 @@
         -->
 
         <div class="row strengths-row">
-            <div class="col"></div>
+            <div class="col pro-part"></div>
+            <div class="col free-quote"></div>
+            <div class="col free-diagnostic"></div>
+
         </div>
 
     </div>

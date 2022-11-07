@@ -88,8 +88,28 @@ h1{
 i{
     color: white;
     position: absolute; 
-    right: 300px;
-    top: 50%;
-    font-size: 200px
+    right: 200px;
+    top: 20px;
+    font-size: 200px;
 }
+@media (max-width: 930px) {
+    h1{
+        left:50px ;
+        width: 40%;
+    }
+    i{
+        right: 50px;
+    }
+    }
+    @media (max-width: 520px) {
+    h1{
+        left:25px ;
+        top: 50px;
+        width: 87%;
+    }
+    i{
+        right: 50px;
+        top: 80px;
+    }
+    }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <div class="container services-container">
+    <div class="container-fluid container-md services-container">
         <h2>Nos prestations</h2>
         <div class="row services">
             <h4>Nous vous proposons une assistance informatique PC/MAC</h4>
@@ -9,11 +9,11 @@
                 <div class="col card-dts icons-location">
                     <div class="col house-icon">
                         <div class="rounded-bckgrd house-i"><i class="bi bi-house-door"></i></div>
-                        <p>Site Client</p>
+                        <p class="p">Site Client</p>
                     </div>
                     <div class="col shop-icon">
                         <div class="rounded-bckgrd shop-i"><i class="bi bi-shop"></i></div>
-                        <p>A l'atelier</p>
+                        <p class="p">A l'atelier</p>
                     </div>
                 </div>
                 <div class="col card-dts">
@@ -78,14 +78,19 @@ export default {
     h2{
         margin: 50px 0;
     }
-    .dts-services{
-        height: 30vh;
+    .services{
+        .dts-services{
         align-items: center;
         margin: auto;
         overflow: hidden;
         .col{
             display: inline-flex;
+            @media (max-width: 800px){
+                display: grid;
+                justify-items: center;
+            }
         }
+        
         .card-dts{
             width: 100%;
             text-align-last: center;
@@ -104,6 +109,13 @@ export default {
                 margin: auto;
                 text-align-last: start;
                 font-size: 20px;
+                color: #485665;
+                @media (max-width: 800px) {
+                    font-size: 15px;
+                    text-align: center;
+                    width: 100%;
+                    text-align-last: center; 
+                }
             }
             &:hover{
             .rounded-bckgrd{
@@ -126,11 +138,18 @@ export default {
                 i{
                     font-size: 32px;
                 }
+                @media (max-width: 800px){
+                    
+                    }
             }
             p{
                 font-size: 20px;
                 align-self: flex-end;
                 margin-left: 20px;
+                @media (max-width: 800px){
+                        font-size: 17px;
+                        margin: 0;
+                    }
             }
             }
         }
@@ -155,6 +174,7 @@ export default {
     .row-2.active2{
         transform: translateX(0%);
         opacity: 1;
+    }
     }
   
 }

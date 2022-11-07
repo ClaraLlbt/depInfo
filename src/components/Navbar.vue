@@ -1,19 +1,23 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid nav-content">
-      <a class="navbar-brand col" href="#"><p>DEPANNAGE INFORMATIQUE</p></a>
-      <div class="navbar-list-ul col" id="navbarSupportedContent">
+      <a class="navbar-brand col col-md-6" href="/depInfo/"><p>DiTO-PRO</p></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse navbar-list-ul col col-md-"  id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item toDesactivate">
-            <a class="nav-link" style="color:#3E83FF" aria-current="page" href="#">Accueil</a>
+            <a class="nav-link" style="color:#3E83FF" aria-current="page" href="/depInfo/">Accueil</a>
           </li>
           <li class="nav-item activateHomeIcon">
             <a class="nav-link" style="color:#3E83FF"  aria-current="page" href="#"><i class="bi bi-house-fill"></i></a>
           </li>
-          <li class="nav-item toDesactivate">
+          <li class="nav-item s-toDesactivate">
             <a class="nav-link" href="#">Album</a>
           </li>
-          <li class="nav-item toDesactivate">
+          <li class="nav-item s-toDesactivate">
             <a class="nav-link" href="#">Qui sommes-nous?</a>
           </li>
           <li class="nav-item">
@@ -49,7 +53,6 @@ export default {
     .navbar-list-ul{
       ul{
         width: 100%;
-        justify-content: flex-end;
         justify-content: space-between;
         .activateHomeIcon{
           display: none;
@@ -65,17 +68,18 @@ export default {
           }
         }
       }
-      @media (max-width: 990px) {
+      @media (max-width: 990px){
         ul{
           display: inline-flex;
-          flex-direction: row;
-          justify-content: space-between;
-          li.toDesactivate{
-            display: none;
-          }
-          li.activateHomeIcon{
-            display: block;
-          }
+          flex-direction: revert;
+          justify-content: space-around;
+          li.toDesactivate{display: none;}
+          li.activateHomeIcon{display: block;}
+        }
+      }
+      @media (max-width: 470px) {
+        ul{
+          li.s-toDesactivate{display: none;}
         }
       }
 
