@@ -1,7 +1,7 @@
 {
   "name": "toulon",
   "version": "0.0.0",
-  "homepage": "https://clarahlt.github.io/depInfo/",
+  "homepage": "https://clarallbt.github.io/depInfo/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@fawmi/vue-google-maps": "^0.9.79",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "bootstrap": "^5.2.2",

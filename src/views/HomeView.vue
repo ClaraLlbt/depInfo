@@ -6,9 +6,13 @@
     
     <Services />
 
-    <Strengths/>
+    <!-- <Strengths/> -->
     <!-- <ClientsServices/> -->
 
+    <ClientsServices />
+
+    
+  <FooterVue />
 
 </template>
 
@@ -17,7 +21,10 @@
 import HdrBanner from '../components/HdrBanner.vue';
 import Navbar from '../components/Navbar.vue';
 import Services from '../components/Services.vue';
-import Strengths from '../components/Strengths.vue';
+// import Strengths from '../components/Strengths.vue';
+import ClientsServices from '../components/ClientsServices.vue';
+
+import FooterVue from '../components/Footer.vue';
 
 export default {
   name: "HomeViewVue",
@@ -25,7 +32,9 @@ export default {
     Navbar,
     HdrBanner,
     Services,
-    Strengths
+    // Strengths,
+    ClientsServices,
+    FooterVue,
   }
 }  
 </script>

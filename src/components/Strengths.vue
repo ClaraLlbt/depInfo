@@ -5,16 +5,16 @@
         
 
         <!--POINTS FORTS ENTREPRISE 
-            Diagnostic gratuit 
-            Devis gratuit 
-            FACTURATION DES DEPLACEMENTS ?gi
-            Sécurisation des données
+            Pour les Pro ET les particuliers
+            Diagnostic gratuit /Devis gratuit 
+            Zone déplacement large
+            SYSTEME Dexploitation PC/MAC
         -->
 
         <div class="row strengths-row">
-            <div class="col pro-part"></div>
-            <div class="col free-quote"></div>
-            <div class="col free-diagnostic"></div>
+            <div class="col pro-part"><i class="bi bi-journal-text"></i></div>
+            <div class="col free-quote"><i class="bi bi-journal-text"></i></div>
+            <div class="col mobility"><i class="bi bi-airplane-engines"></i></div>
 
         </div>
 

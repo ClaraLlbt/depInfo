@@ -84,32 +84,22 @@ h1{
     left: 100px;
     top: 150px;
     width: 50%;
+    @media (max-width: 767px) {
+        width: 100%;
+        top: 50px;
+        left: 0;
+        text-align: center;
+    }
 }
 i{
     color: white;
     position: absolute; 
-    right: 200px;
-    top: 20px;
+    right: 300px;
+    top: 50%;
     font-size: 200px;
+    @media (max-width: 767px) {
+        right: 15px;
+        top: 100px;
+    }
 }
-@media (max-width: 930px) {
-    h1{
-        left:50px ;
-        width: 40%;
-    }
-    i{
-        right: 50px;
-    }
-    }
-    @media (max-width: 520px) {
-    h1{
-        left:25px ;
-        top: 50px;
-        width: 87%;
-    }
-    i{
-        right: 50px;
-        top: 80px;
-    }
-    }
 </style>

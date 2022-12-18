@@ -5,6 +5,10 @@
   color: #485665;
 }
 
+h2{
+  margin: 50px 0;
+}
+
 a,.nav-link{
   text-decoration: none;
   color: #485665;
@@ -19,4 +23,9 @@ a,.nav-link{
     color: #3e83ff;
   }
 }
-
+@media (max-width: 2000px){
+  body { 
+    overflow:scroll !important;
+    padding-right: 0px !important 
+  }
+}

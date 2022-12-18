@@ -1,17 +1,18 @@
 <template>
-    <div class="container-fluid clients-services-container">
+    <div class="container-fluid container-md clients-services-container">
 
 
         <h2>Pour les professionnels ET les particuliers</h2>
         <div class="row">
-            <div class="col-6 pro-client">
+            <div id="proClient" class="col- col-md-6 col-lg-6 pro-client">
+                <div class="rounded-and"><p><i class="bi bi-person-plus-fill"></i></p></div>
                 <h3>Professionnel</h3>
 
                 <ul class="services-list">
                     <li>Assistance Dépannage informatique</li>
-                    <li>Création, dépanange réseau et internet</li>
+                    <li>Création, Dépannage réseau et internet</li>
                     <li>Cablage de réseau informatique</li>
-                    <li>Brassage de baies</li>
+                    <li>Brassage de baie informatique</li>
                     <li>Installation d'équipements informatiques et d'équipements réseau</li>
                     <li>Mise en service des équipements</li>
                     <li>Récupération des données: disque dur illisible/perte de données</li>
@@ -20,15 +21,17 @@
                     <li>Audit</li>
                 </ul>
 
+                <button type="button" class="btn btn-outline-light">Demander un devis</button>
+
             </div>
-            <div class="col-6 particular-client">
+            <div id="individualClient" class="col- col-md-6 col-lg-6 individual-client">
                 <h3>Particulier</h3>
 
                 <ul class="services-list">
                     <li>Assistance Dépannage informatique</li>
-                    <li>Création, dépanange réseau et internet</li>
+                    <li>Création, Dépannage réseau et internet</li>
                     <li>Cablage de réseau informatique</li>
-                    <li>Brassage de baies</li>
+                    <li>Brassage de baie informatique</li>
                     <li>Installation d'équipements informatiques et d'équipements réseau</li>
                     <li>Mise en service des équipements</li>
                     <li>Récupération des données: disque dur illisible/perte de données</li>
@@ -83,5 +86,43 @@ export default {
 .clients-services-container{
     width: 90%;
     margin: auto;
+    .row{
+        border: 1px solid #3E83FF;
+        border-radius: 15px;
+        .pro-client, .individual-client{ padding: 50px;
+        @media (max-width: 767px) {
+            padding: 50px 30px;
+        }}
+        .pro-client{  
+            background: #3E83FF;
+            color: white;
+            border-radius: 14px;
+            .rounded-and{
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                text-align-last: center;
+                position: absolute;
+                right: -30px;
+                top: 50%;
+                background: #3E83FF;
+                p{
+                    margin: none;
+                    height: 100%;
+                    i{
+                        font-size: 35px;
+                    }
+                }
+                @media (max-width: 767px) {
+                    top: 94%;
+                    right: 135px;
+                }
+            }
+
+            &:hover{
+                box-shadow: inset 0px 0px 10px 1px white;
+            }
+        }
+    }
 }
 </style>
